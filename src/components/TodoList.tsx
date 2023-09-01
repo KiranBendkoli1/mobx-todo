@@ -1,12 +1,12 @@
 import { observer } from "mobx-react"
 import store from "../store/store"
 import Todo from "./Todo"
-import { Card, Divider, List } from "antd"
+import { Card, List } from "antd"
 import { useEffect } from "react"
 
-type Props = {}
+// type Props = {}
 
-const TodoList = (props: Props) => {
+const TodoList = () => {
   useEffect(() => {
     store.getTodosFromApi()
   }, [])

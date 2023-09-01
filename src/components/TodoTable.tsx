@@ -1,13 +1,13 @@
 import { Checkbox, Table } from 'antd';
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import store, { Todo } from '../store/store';
-import { observable } from 'mobx';
+
 import { observer } from 'mobx-react';
 import { AiOutlineDelete } from 'react-icons/ai';
 
-type Props = {}
+// type Props = {}
 
-const TodoTable = (props: Props) => {
+const TodoTable = () => {
     const handleDelete = (id: string) => {
         // store.removeTodo(id);
         store.deleteTodosFromApi(id);

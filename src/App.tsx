@@ -1,6 +1,5 @@
 import { Card } from "antd"
 import InputTodo from "./components/InputTodo"
-import TodoListObeservable from "./components/TodoList"
 import TodoTable from "./components/TodoTable"
 
 function App() {

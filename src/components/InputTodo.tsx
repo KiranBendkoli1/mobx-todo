@@ -5,9 +5,7 @@ import { observer } from 'mobx-react';
 
 
 const InputTodo: React.FC = () => {
-    const onFinish = (values: any) => {
-        const { task } = values;
-        // store.addTodo();
+    const onFinish = () => {
         store.postTodosToApi()
     };
     return <Form
